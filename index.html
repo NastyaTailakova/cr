@@ -1,0 +1,76 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виджет</title>
+</head>
+
+<body>
+    <section class="widget">
+        <div class="widget-header">
+            <h4 class="widget-title">Виджет поиска вакансий</h4>
+            <h6 class="widget-subtitle">Используйте поля изменения параметров поиска и пагинацию для изучения разных страниц</h6>
+        </div>
+        <div class="widget-body">
+            
+            <div class="widget-form-wrapper">
+                <form class="widget-form" >
+                    <label class="widget-field">
+                        <h6 class="widget-field-label">Название вакансии</h6>
+                        <input id="vacancy" type="text" class="widget-field-input">
+                    </label>
+
+                    <label class="widget-field">
+                        <h6 class="widget-field-label">Зарплата</h6>
+                        <input id="salary" type="number" class="widget-field-input">
+                    </label>
+
+                    <label class="widget-field">
+                        <h6 class="widget-field-label">Номер страницы</h6>
+                        <input id="page" type="number" class="widget-field-input">
+                    </label>
+
+                    <label class="widget-field">
+                        <h6 class="widget-field-label">Количество записей на странице</h6>
+                        <select name="perPage" id="per-page">
+                            <option disabled>Выберите количество записей на странице</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="75">75</option>
+                            <option value="100">100</option>
+                        </select>
+                    </label>
+
+                    <h5 class="widget-form-error">
+                        Введите верные значения!
+                    </h5>
+                   
+                    <div class="widget-form-controls">
+                        <button class="widget-form-button widget-form-button_clear" type="reset">Очистить</button>
+                        <button class="widget-form-button widget-form-button_search" type="submit">Искать</button>
+                    </div>
+                </form>
+            </div>
+            <div class="widget-table-wrapper">
+                <table class="widget-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Название</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+                <div class="widget-table-loader">
+                    <h3>Загрузка...</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

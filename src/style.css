@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
+
+h1,h2,h3,h4,h5,h6 {
+    margin : 0;
+}
+
+body {
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-weight: 400;
+}
+
+.widget {
+    width: 100%;
+    max-width: 920px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    background: #444;
+    color: #fff;
+}
+
+.widget > * {
+    padding: 10px 15px 0;
+}
+
+.widget-header {
+    border-bottom: 1px solid #fff;
+}
+
+.widget-title {
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.widget-subtitle {
+    margin-bottom: 20px;
+}
+
+.widget-body {
+}
+
+.widget-form-wrapper {
+    width: 100%;
+    max-width: 490px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.widget-form {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-field {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.widget-field-label {
+    margin-bottom: 4px;
+}
+
+
+.widget-field-input {
+    background: transparent;
+    border-radius: 8px;
+    outline: none;
+    padding: 4px;
+    color: #fff;
+    border: 2px solid #888;
+}
+
+.widget-form-error {
+    color: red;
+    visibility: hidden;
+}
+
+.widget-form-controls {
+}
+
+.widget-form-button {
+    float: right;
+
+    background: none;
+    color: #fff;
+
+    cursor: pointer;
+    
+    padding: 4px 8px;
+    
+    border-style: solid;
+    border-width: 1px;
+} 
+
+.widget-form-button_clear {
+    margin-left: 20px;
+        border-color: blue;
+}
+
+.widget-form-button_search {
+    border-color: blueviolet;
+}
+
+.widget-table-wrapper {
+    position: relative;
+    border: 1px solid #999;
+    min-height: 200px;
+}
+
+.widget-table-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.8);
+}
+
+.widget-table {
+    color: #fff;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid #999;
+}
+
